@@ -39,4 +39,6 @@ only thing you probably have to install is the gromet package. You can
 find instructions for this in the Arizona repo here:
 https://github.com/ml4ai/automates.
 
+Also, note that you'll need the latest version of plotly (5.10).
+
 
