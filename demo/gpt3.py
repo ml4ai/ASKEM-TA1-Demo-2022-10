@@ -1,10 +1,13 @@
 import re
-
+from cryptography.fernet import Fernet
 import openai
 
 
 def get_gpt_match(prompt):
-    openai.api_key = "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"
+    mykey = b'Z1QFxceGL_s6karbgfNFyuOdQ__m5TfHR7kuLPJChgs='
+    enc = b'gAAAAABjRh0iNbsVb6_DKSHPmlg3jc4svMDEmKuYd-DcoTxEbESYI9F8tm8anjbsTsZYHz_avZudJDBdOXSHYZqKmhdoBcJd919hCffSMg6WFYP12hpvI7EeNppGFNoZsLGnDM5d6AOUeRVeIc2FbmB_j0vvcIwuEQ=='
+    fernet = Fernet(mykey)
+    openai.api_key = fernet.decrypt(enc).decode()
     # prompt = "Please write me a sentence\n\n"
     response = openai.Completion.create(model="text-davinci-002", prompt=prompt, temperature=0.0, max_tokens=256)
     result = response.choices[0].text.strip()
