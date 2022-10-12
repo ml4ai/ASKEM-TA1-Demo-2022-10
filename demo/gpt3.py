@@ -67,10 +67,8 @@ def match_targets(targets, code_path, terms):
         connection.append((t,{val: "grometSubObject"}, float(vars[vdict[val]][2]),  vars[vdict[val]][0]))
     return connection
 
-terms = ['population', 'doubling time', 'recovery time', 'infectious time']
-code = "CHIME_SIR_default_model.py"
-targets = ['population', 'doubling time', 'recovery time', 'infectious time']
-val = match_targets(targets, code, terms)
-print(val)
-
-
+# terms = ['population', 'doubling time', 'recovery time', 'infectious time']
+# code = "CHIME_SIR_default_model.py"
+# targets = ['population', 'doubling time', 'recovery time', 'infectious time']
+# val = match_targets(targets, code, terms)
+# print(val)
