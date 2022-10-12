@@ -72,5 +72,3 @@ def match_targets(targets, code_path, terms):
 # targets = ['population', 'doubling time', 'recovery time', 'infectious time']
 # val = match_targets(targets, code, terms)
 # print(val)
-
-

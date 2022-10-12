@@ -1,5 +1,17 @@
 # ASKEM TA-1 Working Group Demo for October 2022
 
+## Install
+
+Requires:
+
+- openapi
+- cryptography
+- fernet
+
+## Content
+
+[Needs updating]
+
 There are two demo Jupyter Notebook files.
 
 The first was written by Clay Morrison, called
