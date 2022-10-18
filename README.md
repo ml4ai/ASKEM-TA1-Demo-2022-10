@@ -8,6 +8,12 @@ Requires:
 - cryptography
 - fernet
 
+### Optional
+
+To get access to options such as collapsable cells, install nbextensions:
+
+- https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html
+
 ## Content
 
 [Needs updating]
